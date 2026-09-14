@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>For Ololade ❤️</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#fff4f8;color:#3e3340}
+  body{overflow-x:hidden}
+  .page{display:none;min-height:100svh;padding:32px 20px 48px;align-items:center;justify-content:center;text-align:center;position:relative;overflow-y:auto}
+  .page.visible{display:flex;flex-direction:column}
+  h1{margin:0 0 14px;color:#ef5f93;font-size:clamp(2rem,8vw,3.2rem);line-height:1.05}
+  p{font-size:clamp(1rem,4.2vw,1.2rem);line-height:1.65;max-width:650px;margin:12px auto;color:#4b3f49}
+  .card{width:min(92vw,650px);background:rgba(255,255,255,.94);border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(189,74,122,.14)}
+  .btn{border:0;border-radius:999px;background:#ef6b9a;color:white;padding:14px 24px;font-size:1rem;font-weight:700;margin-top:18px;box-shadow:0 8px 18px rgba(239,107,154,.28)}
+  .btn:active{transform:scale(.98)}
+  #page1{background:linear-gradient(rgba(50,20,40,.18),rgba(50,20,40,.18)),url('Background.jpg') center/cover no-repeat;color:white}
+  #page1 .card{background:rgba(255,255,255,.9)}
+  .monogram{font-size:clamp(2.2rem,10vw,4rem);font-weight:800;color:white;text-shadow:0 2px 16px rgba(0,0,0,.3);margin-bottom:18px}
+  .pill{display:inline-block;background:white;color:#ef5f93;border-radius:999px;padding:10px 18px;font-weight:700;margin-bottom:20px}
+  .gif{width:132px;height:132px;object-fit:cover;border-radius:50%;box-shadow:0 10px 30px rgba(239,107,154,.22);margin-bottom:14px}
+  .notes{width:min(94vw,760px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+  .note{background:#fff6b8;border-radius:16px;padding:16px;min-height:120px;display:flex;align-items:center;justify-content:center;font-weight:700;line-height:1.45;box-shadow:0 7px 18px rgba(0,0,0,.09)}
+  .note:nth-child(2n){transform:rotate(1.5deg)} .note:nth-child(2n+1){transform:rotate(-1.5deg)}
+  .quiz{display:grid;gap:12px;width:min(92vw,520px);margin-top:18px}
+  .quiz button{border:0;border-radius:18px;padding:15px;background:#e9def7;color:#493f53;font-size:1rem;font-weight:700}
+  .quiz button.done{background:#d8f3dc}
+  .letter{width:min(92vw,700px);text-align:left;background:repeating-linear-gradient(#fffdf9 0,#fffdf9 31px,#eadfd7 32px);padding:28px 22px;border-radius:18px;box-shadow:0 10px 28px rgba(0,0,0,.1);font-family:Georgia,serif;font-size:1.06rem;line-height:2}
+  .final-heart{font-size:4rem;margin-bottom:8px;animation:pulse 1.6s infinite}
+  @keyframes pulse{50%{transform:scale(1.12)}}
+  .tiny{font-size:.92rem;opacity:.75}
+  @media(max-width:520px){
+    .page{justify-content:flex-start;padding-top:max(36px,calc(env(safe-area-inset-top) + 24px))}
+    .notes{grid-template-columns:1fr}
+    .note{min-height:96px}
+    .card{padding:20px}
+  }
+</style>
+</head>
+<body>
+<section id="page1" class="page visible">
+  <div class="pill">Hi Ololade ❤️</div>
+  <div class="monogram">Q ♡ O</div>
+  <div class="card">
+    <p>I wanted to do something small, thoughtful and very me… because some things deserve to be said properly.</p>
+    <button class="btn" onclick="go('page2')">Okayyy… 👀</button>
+  </div>
+</section>
+
+<section id="page2" class="page">
+  <img class="gif" src="FirstGIF.gif" alt="Cute animation">
+  <h1>Ololade</h1>
+  <p>I like the little things about us more than you probably realize 😂</p>
+  <div class="notes">
+    <div class="note">I like how we can gist about absolutely nothing and somehow it still makes my day.</div>
+    <div class="note">I like your stubbornness… even though you’ll deny being stubborn 😭😂</div>
+    <div class="note">I like hearing your voice, especially after a long day or a rough night shift.</div>
+    <div class="note">I like that you keep me on my toes — even my emojis have rules now 😂</div>
+    <div class="note">I like making you laugh, checking on you, and just being around you.</div>
+    <div class="note">Most of all, I like you — properly, intentionally, and for real ❤️</div>
+  </div>
+  <button class="btn" onclick="go('page3')">Keep going</button>
+</section>
+
+<section id="page3" class="page">
+  <div class="card">
+    <h1>Quick question 😂</h1>
+    <p>What do I like most about you?</p>
+    <div class="quiz">
+      <button onclick="answer(this,'Your smile is definitely dangerous, I can’t lie 😂')">Your smile</button>
+      <button onclick="answer(this,'Your whole vibe gets me every single time.')">Your vibe</button>
+      <button onclick="answer(this,'Correct answer 😭😂 It’s really everything together.')">Everything</button>
+    </div>
+    <p id="result" class="tiny">Tap one 👀</p>
+    <button id="quizNext" class="btn" style="display:none" onclick="go('page4')">Next ❤️</button>
+  </div>
+</section>
+
+<section id="page4" class="page">
+  <h1>One thing I wanted you to know</h1>
+  <div class="letter">
+    Ololade,<br><br>
+    I know I haven’t always gotten everything right, and I know there were moments where what I did didn’t fully show how much you meant to me.<br><br>
+    I also know you wanted me to be intentional, and I heard you. I didn’t want to just rush into doing something because you mentioned it. I wanted to take my time and do something that actually feels thoughtful and personal.<br><br>
+    I genuinely enjoy having you in my life — the jokes, the random conversations, the stubbornness, the little arguments, the check-ins, and even the moments where you tell me to stop using certain emojis 😭😂<br><br>
+    I’m not trying to make this bigger than it needs to be. I just want to be clear about one thing: I like you, I care about you, and I want to do this properly.<br><br>
+    So there’s one last thing I want to ask you… ❤️
+  </div>
+  <button class="btn" onclick="go('page5')">Okay…</button>
+</section>
+
+<section id="page5" class="page">
+  <div class="card">
+    <div class="final-heart">❤️</div>
+    <h1>Can I be your boyfriend?</h1>
+    <p>Don’t answer the phone 😭😂</p>
+    <p><strong>Look at me.</strong></p>
+    <p class="tiny">I want to ask you properly myself.</p>
+  </div>
+</section>
+
+<script>
+function go(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('visible'));
+  document.getElementById(id).classList.add('visible');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+let picked=false;
+function answer(btn,text){
+  document.querySelectorAll('.quiz button').forEach(b=>b.classList.remove('done'));
+  btn.classList.add('done');
+  document.getElementById('result').textContent=text;
+  document.getElementById('quizNext').style.display='inline-block';
+  picked=true;
+}
+</script>
+</body>
+</html>
